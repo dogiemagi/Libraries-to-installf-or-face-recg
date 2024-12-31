@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Tools Installation Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0073e6;
+            font-size: 2.5em;
+            text-align: center;
+            background: linear-gradient(90deg,  #0073e6,   #0073e6, #0073e6);
+            background-size: 200% auto;
+            color: white;
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
+            animation: glitter 3s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes glitter {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        h2 {
+            color: #0073e6;
+        }
+        pre {
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .step {
+            margin-bottom: 20px;
+        }
+        .step:hover {
+            background-color: #eaf4fc;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s, padding 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Library Tools Installation Guide</h1>
+
+        <div class="step">
+            <h2>1. Upgrade pip to the latest version</h2>
+            <pre>python3 -m pip install --upgrade pip</pre>
+        </div>
+
+        <div class="step">
+            <h2>2. Install Required Python Libraries</h2>
+            <h3>Seaborn</h3>
+            <pre>pip install seaborn
+pip show seaborn</pre>
+
+            <h3>Matplotlib</h3>
+            <pre>pip install matplotlib
+pip show matplotlib</pre>
+
+            <h3>NumPy</h3>
+            <pre>pip install numpy
+pip show numpy</pre>
+
+            <h3>Pandas</h3>
+            <pre>pip install pandas
+pip show pandas</pre>
+        </div>
+
+        <div class="step">
+            <h2>3. Install OpenCV</h2>
+            <pre>py -m pip install opencv-contrib-python</pre>
+            <p>To verify the installation:</p>
+            <pre>import cv2
+print(cv2.__version__)</pre>
+        </div>
+
+        <div class="step">
+            <h2>4. Uninstall NumPy (If Needed)</h2>
+            <pre>pip uninstall numpy</pre>
+        </div>
+
+        <div class="step">
+            <h2>5. Install CMake</h2>
+            <p>Download and install CMake from the <a href="https://cmake.org/download/" target="_blank">official website</a>.</p>
+            <pre>cmake --version</pre>
+        </div>
+
+        <div class="step">
+            <h2>6. Install dlib</h2>
+            <h3>Install via pip</h3>
+            <pre>pip install dlib</pre>
+            <h3>Alternative Method</h3>
+            <p>If pip fails, download the appropriate .whl file from <a href="https://github.com/z-mahmud22/Dlib_Windows_Python3.x" target="_blank">Dlib GitHub page</a> and install it:</p>
+            <pre>pip install filename.whl</pre>
+        </div>
+
+        <div class="step">
+            <h2>7. Install Face Recognition</h2>
+            <pre>pip install face-recognition</pre>
+            <p>Verify the installation:</p>
+            <pre>import face_recognition
+print(face_recognition.__version__)</pre>
+        </div>
+
+        <div class="step">
+            <h2>8. Install Flask</h2>
+            <pre>pip install flask</pre>
+            <p>Verify the installation:</p>
+            <pre>import flask
+print(flask.__version__)</pre>
+        </div>
+
+        <div class="step">
+            <h2>Summary of Commands</h2>
+            <pre>
+# Upgrade pip
+python3 -m pip install --upgrade pip
+
+# Install libraries
+pip install seaborn
+pip install matplotlib
+pip install numpy
+pip install pandas
+
+# Install OpenCV
+py -m pip install opencv-contrib-python
+
+# Install CMake
+pip install cmake
+cmake --version
+
+# Install dlib (via .whl if necessary)
+pip install dlib
+pip install filename.whl  # If .whl file is downloaded
+
+# Install face-recognition
+pip install face-recognition
+
+# Install Flask
+pip install flask
+            </pre>
+        </div>
+
+        <p>Follow these steps to set up your development environment and install the necessary libraries. Happy coding!</p>
+    </div>
+</body>
+</html>
