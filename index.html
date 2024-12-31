@@ -114,7 +114,7 @@ print(cv2.__version__)</pre>
 
         <div class="step">
             <h2>5. Install CMake</h2>
-            <p>Download and install CMake from the <a href="https://cmake.org/download/" target="_blank">official website</a>.</p>
+            <p>Download and install CMake installer from the <a href="https://cmake.org/download/" target="_blank">official website</a>and setup.</p>
             <pre>cmake --version</pre>
         </div>
 
@@ -123,8 +123,11 @@ print(cv2.__version__)</pre>
             <h3>Install via pip</h3>
             <pre>pip install dlib</pre>
             <h3>Alternative Method</h3>
-            <p>If pip fails, download the appropriate .whl file from <a href="https://github.com/z-mahmud22/Dlib_Windows_Python3.x" target="_blank">Dlib GitHub page</a> and install it:</p>
+            <p>If pip fails, download the .whl file according to your version of Python from <a href="https://github.com/z-mahmud22/Dlib_Windows_Python3.x" target="_blank">Dlib GitHub page</a> and install it:</p>
             <pre>pip install filename.whl</pre>
+            <p>To verify the installation:</p>
+            <pre>import dlib
+print(dlib.__version__)</pre>
         </div>
 
         <div class="step">
@@ -151,9 +154,13 @@ python3 -m pip install --upgrade pip
 
 # Install libraries
 pip install seaborn
+pip show seaborn
 pip install matplotlib
+pip show matplotlib
 pip install numpy
+pip show numpy
 pip install pandas
+pip show pandas
 
 # Install OpenCV
 py -m pip install opencv-contrib-python
@@ -165,6 +172,9 @@ cmake --version
 # Install dlib (via .whl if necessary)
 pip install dlib
 pip install filename.whl  # If .whl file is downloaded
+# Verify dlib
+import dlib
+print(dlib.__version__)
 
 # Install face-recognition
 pip install face-recognition
